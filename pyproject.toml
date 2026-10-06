@@ -7,10 +7,13 @@ authors = [
     { name = "l-schwindenhammer-ece", email = "lucas.schwindenhammer@edu.ece.fr" }
 ]
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "faker>=40.41.0",
+]
 
 [project.scripts]
-eco-big-data-onyxia = "eco_big_data_onyxia:main"
+dataset-users = "<git-repo-name>.dataset_users:main"
+dataset-orders = "<git-repo-name>.dataset_orders:main"
 
 [build-system]
 requires = ["uv_build>=0.12.10,<0.13.0"]
